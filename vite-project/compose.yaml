@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - 5172:5172
+    volumes:
+      - .:/app
+      - /app/node_modules
